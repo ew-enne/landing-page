@@ -11,6 +11,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -21,7 +22,6 @@ img {
 /****** fonts */
 
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -32,19 +32,20 @@ img {
 /******fonts*/
 
 body {
-    display: flex;
-    justify-content: center;
+  width: 100vw;
 }
 
-header {
+.header {
     background-color: #1F2937;
     color: white;
+    padding-bottom: 6rem;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
     padding: 18px 10vw;
-
 }
 
 .header-logo {
@@ -60,3 +61,66 @@ header {
 .header-links li {
   padding-left: 18px;
 }
+
+.hero {
+  background-color: #1F2937;
+  color: white;
+  padding-bottom: 6rem;
+}
+
+.hero-content {
+  display: flex;
+  
+  padding: 18px 10vw;
+}
+
+.hero-title {
+  max-width: 360px;
+}
+
+.hero-subtext {
+  max-width: 420px;
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.hero-cta {
+  background-color: #3882f6;
+  color: white;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: .5rem;
+  border-style: none;
+}
+
+.hero-placeholder-text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.hero-left {
+  flex: 1 0 50%;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+
+
+
+
+/*
+* { outline: 1px solid red; }
+*/
